@@ -64,6 +64,30 @@
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_DatSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DatSan.Designer.cs">
+      <DependentUpon>frm_DatSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_hethong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_hethong.Designer.cs">
+      <DependentUpon>frm_hethong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_QuanLyKinhDoanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_QuanLyKinhDoanh.Designer.cs">
+      <DependentUpon>frm_QuanLyKinhDoanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_QuanLySan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_QuanLySan.Designer.cs">
+      <DependentUpon>frm_QuanLySan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +98,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_hethong.resx">
+      <DependentUpon>frm_hethong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TrangChu.resx">
       <DependentUpon>frm_TrangChu.cs</DependentUpon>
@@ -127,6 +154,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\anh-bong-da-tren-san-co_105531274.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer_ball_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goal_net_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expensive_price_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\euro-2020-ball-uniforia.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
