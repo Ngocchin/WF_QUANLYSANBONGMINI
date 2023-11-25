@@ -33,13 +33,13 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.btnQuanLyKinhDoanh = new System.Windows.Forms.Button();
             this.btnQuanLySan = new System.Windows.Forms.Button();
             this.btnDatSan = new System.Windows.Forms.Button();
             this.btnHeThong = new System.Windows.Forms.Button();
             this.btnlogo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.panelTitleBar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogo)).BeginInit();
@@ -113,16 +113,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(366, 743);
             this.panelMenu.TabIndex = 18;
-            // 
-            // panelDesktopPane
-            // 
-            this.panelDesktopPane.BackgroundImage = global::QUANLYSANBONGMINI.Properties.Resources.euro_2020_ball_uniforia;
-            this.panelDesktopPane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(366, 55);
-            this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(1042, 688);
-            this.panelDesktopPane.TabIndex = 20;
             // 
             // btnQuanLyKinhDoanh
             // 
@@ -203,7 +193,7 @@
             this.btnlogo.Location = new System.Drawing.Point(4, 7);
             this.btnlogo.Margin = new System.Windows.Forms.Padding(4);
             this.btnlogo.Name = "btnlogo";
-            this.btnlogo.Size = new System.Drawing.Size(405, 94);
+            this.btnlogo.Size = new System.Drawing.Size(358, 94);
             this.btnlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnlogo.TabIndex = 0;
             this.btnlogo.TabStop = false;
@@ -218,6 +208,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
+            // 
+            // panelDesktopPane
+            // 
+            this.panelDesktopPane.BackgroundImage = global::QUANLYSANBONGMINI.Properties.Resources.euro_2020_ball_uniforia;
+            this.panelDesktopPane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPane.Location = new System.Drawing.Point(366, 55);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(1042, 688);
+            this.panelDesktopPane.TabIndex = 20;
             // 
             // frm_TrangChu
             // 

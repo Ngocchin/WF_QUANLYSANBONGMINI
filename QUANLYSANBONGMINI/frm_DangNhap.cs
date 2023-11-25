@@ -17,7 +17,7 @@ namespace QUANLYSANBONGMINI
     public partial class frm_DangNhap : Form
     {
         KetNoi kn = new KetNoi();
-        SqlConnection con;        
+        SqlConnection con;
         public frm_DangNhap()
         {
             InitializeComponent();

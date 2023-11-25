@@ -14,5 +14,6 @@ namespace QUANLYSANBONGMINI.DAL
             SqlConnection con = new SqlConnection(@"Data Source=chin-pc;Initial Catalog=QuanLySanBong;Integrated Security=True");
             return con;
         }
+        
     }
 }

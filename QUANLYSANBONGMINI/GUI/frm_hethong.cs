@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QUANLYSANBONGMINI.GUI
+namespace QUANLYSANBONGMINI
 {
     public partial class frm_HeThong : Form
     {

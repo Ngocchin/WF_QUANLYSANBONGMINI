@@ -16,7 +16,7 @@ namespace QUANLYSANBONGMINI.GUI
         public frm_TrangChu(string username1, string display1, string pass1, string quyen1)
         {
             InitializeComponent();
-            this.username1 = username1;
+            this.username1 = username1; 
             this.display1 = display1;
             this.pass1 = pass1;
             this.quyen1 = quyen1;

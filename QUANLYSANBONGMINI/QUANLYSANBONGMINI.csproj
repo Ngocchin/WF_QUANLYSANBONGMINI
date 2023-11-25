@@ -52,29 +52,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ThueSanBLL.cs" />
     <Compile Include="DAL\KetNoi.cs" />
     <Compile Include="DAL\QuanLySanBong.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLySanBong.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAL\ThueSanDAL.cs" />
     <Compile Include="frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_HeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_HeThong.Designer.cs">
+      <DependentUpon>frm_HeThong.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_DatSan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frm_DatSan.Designer.cs">
       <DependentUpon>frm_DatSan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\frm_hethong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frm_hethong.Designer.cs">
-      <DependentUpon>frm_hethong.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_QuanLyKinhDoanh.cs">
       <SubType>Form</SubType>
@@ -99,8 +101,17 @@
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frm_hethong.resx">
-      <DependentUpon>frm_hethong.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\frm_HeThong.resx">
+      <DependentUpon>frm_HeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DatSan.resx">
+      <DependentUpon>frm_DatSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_QuanLyKinhDoanh.resx">
+      <DependentUpon>frm_QuanLyKinhDoanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_QuanLySan.resx">
+      <DependentUpon>frm_QuanLySan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TrangChu.resx">
       <DependentUpon>frm_TrangChu.cs</DependentUpon>
@@ -141,7 +152,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
+    <None Include="Resources\search invoice.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\debut.JPG" />
@@ -172,6 +183,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\euro-2020-ball-uniforia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanbong11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanbong111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thanhtoan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xuất.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_undo_arrow_icon_149006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss_man-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\traibanh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
