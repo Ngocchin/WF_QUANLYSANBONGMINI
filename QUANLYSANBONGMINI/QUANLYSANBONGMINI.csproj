@@ -52,13 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\AccountBLL.cs" />
+    <Compile Include="BLL\HoaDonBLL.cs" />
+    <Compile Include="BLL\KhachHangBLL.cs" />
+    <Compile Include="BLL\LoaiSanBLL.cs" />
+    <Compile Include="BLL\SanBLL.cs" />
     <Compile Include="BLL\ThueSanBLL.cs" />
+    <Compile Include="DAL\AccountDAL.cs" />
+    <Compile Include="DAL\HoaDonDAL.cs" />
     <Compile Include="DAL\KetNoi.cs" />
+    <Compile Include="DAL\KhachHangDAL.cs" />
+    <Compile Include="DAL\LoaiSanDAL.cs" />
     <Compile Include="DAL\QuanLySanBong.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLySanBong.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAL\SanDAL.cs" />
     <Compile Include="DAL\ThueSanDAL.cs" />
     <Compile Include="frm_DangNhap.cs">
       <SubType>Form</SubType>
@@ -222,6 +232,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\traibanh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Soccer_icon-icons.com_67819.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

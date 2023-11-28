@@ -65,7 +65,7 @@
             this.btnDangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.ForeColor = System.Drawing.Color.Black;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(4, 676);
+            this.btnDangXuat.Location = new System.Drawing.Point(26, 676);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(158, 55);
             this.btnDangXuat.TabIndex = 16;
@@ -78,7 +78,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
-            this.lblTitle.Location = new System.Drawing.Point(626, 9);
+            this.lblTitle.Location = new System.Drawing.Point(667, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(207, 30);
             this.lblTitle.TabIndex = 6;
@@ -87,7 +87,7 @@
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelTitleBar.BackColor = System.Drawing.Color.Transparent;
             this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(366, 0);
@@ -128,7 +128,7 @@
             this.btnQuanLyKinhDoanh.Name = "btnQuanLyKinhDoanh";
             this.btnQuanLyKinhDoanh.Size = new System.Drawing.Size(409, 63);
             this.btnQuanLyKinhDoanh.TabIndex = 26;
-            this.btnQuanLyKinhDoanh.Text = "Quản Lý Kinh Doanh";
+            this.btnQuanLyKinhDoanh.Text = "Quản Lý Khách Hàng/Hóa Đơn";
             this.btnQuanLyKinhDoanh.UseVisualStyleBackColor = true;
             this.btnQuanLyKinhDoanh.Click += new System.EventHandler(this.btnQuanLyKinhDoanh_Click);
             // 
@@ -146,7 +146,7 @@
             this.btnQuanLySan.Name = "btnQuanLySan";
             this.btnQuanLySan.Size = new System.Drawing.Size(409, 74);
             this.btnQuanLySan.TabIndex = 25;
-            this.btnQuanLySan.Text = "Quản Lý Sân";
+            this.btnQuanLySan.Text = "Quản Lý Sân Bóng";
             this.btnQuanLySan.UseVisualStyleBackColor = true;
             this.btnQuanLySan.Click += new System.EventHandler(this.btnQuanLySan_Click);
             // 
@@ -164,7 +164,7 @@
             this.btnDatSan.Name = "btnDatSan";
             this.btnDatSan.Size = new System.Drawing.Size(409, 65);
             this.btnDatSan.TabIndex = 24;
-            this.btnDatSan.Text = "Đặt Sân";
+            this.btnDatSan.Text = "Đặt Sân/Trả Sân";
             this.btnDatSan.UseVisualStyleBackColor = true;
             this.btnDatSan.Click += new System.EventHandler(this.btnDatSan_Click);
             // 
@@ -182,7 +182,7 @@
             this.btnHeThong.Name = "btnHeThong";
             this.btnHeThong.Size = new System.Drawing.Size(409, 70);
             this.btnHeThong.TabIndex = 23;
-            this.btnHeThong.Text = "Hệ Thống";
+            this.btnHeThong.Text = "Quản Lý Tài Khoản";
             this.btnHeThong.UseVisualStyleBackColor = true;
             this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
             // 
@@ -229,7 +229,7 @@
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Name = "frm_TrangChu";
-            this.Text = "frm_trangchu";
+            this.Text = "TRANG CHỦ";
             this.Load += new System.EventHandler(this.frm_TrangChu_Load);
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();

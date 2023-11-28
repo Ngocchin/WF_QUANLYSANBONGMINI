@@ -31,92 +31,92 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.cbbloaisan = new System.Windows.Forms.ComboBox();
+            this.cbo_loaisan = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtSearchUser = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_TimKiem = new System.Windows.Forms.Button();
             this.lblmasan = new System.Windows.Forms.Label();
-            this.txttensan = new System.Windows.Forms.TextBox();
+            this.txt_tensan = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.grTTKH_DanhSach = new System.Windows.Forms.GroupBox();
-            this.dtgvQLS_Show = new System.Windows.Forms.DataGridView();
+            this.đgv_san = new System.Windows.Forms.DataGridView();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DisplayName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PassWord = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.toolStripChucNang = new System.Windows.Forms.ToolStrip();
+            this.btn_thoatsan = new System.Windows.Forms.ToolStrip();
+            this.btn_themsan = new System.Windows.Forms.ToolStripButton();
+            this.btn_xoasan = new System.Windows.Forms.ToolStripButton();
+            this.btnSua = new System.Windows.Forms.ToolStripButton();
+            this.btnReset = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnThoat = new System.Windows.Forms.ToolStripButton();
             this.cbbloaisann = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtmasan = new System.Windows.Forms.TextBox();
+            this.txt_masan = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.grTKKH_DanhMuc = new System.Windows.Forms.GroupBox();
-            this.dtgvQLLS_Show = new System.Windows.Forms.DataGridView();
+            this.dgv_loaisan = new System.Windows.Forms.DataGridView();
             this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.grTTKH_ThongTin = new System.Windows.Forms.GroupBox();
-            this.txtTenLoaiSan = new System.Windows.Forms.TextBox();
-            this.txtloaisan = new System.Windows.Forms.TextBox();
-            this.txtgialoaisan = new System.Windows.Forms.TextBox();
+            this.txt_TenLoaiSan = new System.Windows.Forms.TextBox();
+            this.txt_loaisan = new System.Windows.Forms.TextBox();
+            this.txt_gialoaisan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btn_Themloaisan = new System.Windows.Forms.ToolStripButton();
+            this.btn_XoaLoaiSan = new System.Windows.Forms.ToolStripButton();
+            this.btn_SuaLoaiSan = new System.Windows.Forms.ToolStripButton();
+            this.btn_ResetLoaiSan = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnThem = new System.Windows.Forms.ToolStripButton();
-            this.btnXoa = new System.Windows.Forms.ToolStripButton();
-            this.btnSua = new System.Windows.Forms.ToolStripButton();
-            this.btnReset = new System.Windows.Forms.ToolStripButton();
-            this.btnThoat = new System.Windows.Forms.ToolStripButton();
-            this.btn_Them = new System.Windows.Forms.ToolStripButton();
-            this.btn_Xoa = new System.Windows.Forms.ToolStripButton();
-            this.btn_Sua = new System.Windows.Forms.ToolStripButton();
-            this.btn_Reset = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.grTTKH_DanhSach.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvQLS_Show)).BeginInit();
-            this.toolStripChucNang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.đgv_san)).BeginInit();
+            this.btn_thoatsan.SuspendLayout();
             this.cbbloaisann.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.grTKKH_DanhMuc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvQLLS_Show)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_loaisan)).BeginInit();
             this.panel4.SuspendLayout();
             this.grTTKH_ThongTin.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbbloaisan
+            // cbo_loaisan
             // 
-            this.cbbloaisan.FormattingEnabled = true;
-            this.cbbloaisan.Location = new System.Drawing.Point(148, 333);
-            this.cbbloaisan.Name = "cbbloaisan";
-            this.cbbloaisan.Size = new System.Drawing.Size(203, 25);
-            this.cbbloaisan.TabIndex = 10;
+            this.cbo_loaisan.FormattingEnabled = true;
+            this.cbo_loaisan.Location = new System.Drawing.Point(148, 333);
+            this.cbo_loaisan.Name = "cbo_loaisan";
+            this.cbo_loaisan.Size = new System.Drawing.Size(203, 25);
+            this.cbo_loaisan.TabIndex = 10;
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupBox1.Controls.Add(this.txtSearchUser);
-            this.groupBox1.Controls.Add(this.btnTimKiem);
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.txt_Search);
+            this.groupBox1.Controls.Add(this.btn_TimKiem);
             this.groupBox1.Controls.Add(this.lblmasan);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
@@ -129,27 +129,43 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm Kiếm";
             // 
-            // txtSearchUser
+            // txt_Search
             // 
-            this.txtSearchUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.txtSearchUser.BorderRadius = 6;
-            this.txtSearchUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchUser.DefaultText = "";
-            this.txtSearchUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchUser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchUser.Location = new System.Drawing.Point(185, 23);
-            this.txtSearchUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearchUser.Name = "txtSearchUser";
-            this.txtSearchUser.PasswordChar = '\0';
-            this.txtSearchUser.PlaceholderText = "Nhập tên sân để tìm kiếm...";
-            this.txtSearchUser.SelectedText = "";
-            this.txtSearchUser.Size = new System.Drawing.Size(279, 36);
-            this.txtSearchUser.TabIndex = 3;
+            this.txt_Search.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
+            this.txt_Search.BorderRadius = 6;
+            this.txt_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Search.DefaultText = "";
+            this.txt_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Search.Location = new System.Drawing.Point(185, 23);
+            this.txt_Search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.PasswordChar = '\0';
+            this.txt_Search.PlaceholderText = "Nhập tên sân để tìm kiếm...";
+            this.txt_Search.SelectedText = "";
+            this.txt_Search.Size = new System.Drawing.Size(279, 36);
+            this.txt_Search.TabIndex = 3;
+            // 
+            // btn_TimKiem
+            // 
+            this.btn_TimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_TimKiem.ForeColor = System.Drawing.Color.Black;
+            this.btn_TimKiem.Image = global::QUANLYSANBONGMINI.Properties.Resources.search_invoice;
+            this.btn_TimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_TimKiem.Location = new System.Drawing.Point(517, 12);
+            this.btn_TimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_TimKiem.Name = "btn_TimKiem";
+            this.btn_TimKiem.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.btn_TimKiem.Size = new System.Drawing.Size(167, 49);
+            this.btn_TimKiem.TabIndex = 1;
+            this.btn_TimKiem.Text = "Tìm Kiếm";
+            this.btn_TimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TimKiem.UseVisualStyleBackColor = false;
             // 
             // lblmasan
             // 
@@ -161,13 +177,13 @@
             this.lblmasan.Text = "UserName:";
             this.lblmasan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txttensan
+            // txt_tensan
             // 
-            this.txttensan.Location = new System.Drawing.Point(148, 410);
-            this.txttensan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txttensan.Name = "txttensan";
-            this.txttensan.Size = new System.Drawing.Size(203, 23);
-            this.txttensan.TabIndex = 2;
+            this.txt_tensan.Location = new System.Drawing.Point(148, 410);
+            this.txt_tensan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_tensan.Name = "txt_tensan";
+            this.txt_tensan.Size = new System.Drawing.Size(203, 23);
+            this.txt_tensan.TabIndex = 2;
             // 
             // panel3
             // 
@@ -181,7 +197,7 @@
             // grTTKH_DanhSach
             // 
             this.grTTKH_DanhSach.BackColor = System.Drawing.Color.White;
-            this.grTTKH_DanhSach.Controls.Add(this.dtgvQLS_Show);
+            this.grTTKH_DanhSach.Controls.Add(this.đgv_san);
             this.grTTKH_DanhSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grTTKH_DanhSach.ForeColor = System.Drawing.Color.Black;
             this.grTTKH_DanhSach.Location = new System.Drawing.Point(0, 0);
@@ -193,10 +209,10 @@
             this.grTTKH_DanhSach.TabStop = false;
             this.grTTKH_DanhSach.Text = "Danh sách";
             // 
-            // dtgvQLS_Show
+            // đgv_san
             // 
-            this.dtgvQLS_Show.AllowUserToAddRows = false;
-            this.dtgvQLS_Show.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.đgv_san.AllowUserToAddRows = false;
+            this.đgv_san.BackgroundColor = System.Drawing.Color.DarkGray;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -204,17 +220,17 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvQLS_Show.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvQLS_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvQLS_Show.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.đgv_san.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.đgv_san.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.đgv_san.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UserName,
             this.DisplayName,
             this.PassWord});
-            this.dtgvQLS_Show.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvQLS_Show.Location = new System.Drawing.Point(4, 19);
-            this.dtgvQLS_Show.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgvQLS_Show.Name = "dtgvQLS_Show";
-            this.dtgvQLS_Show.ReadOnly = true;
+            this.đgv_san.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.đgv_san.Location = new System.Drawing.Point(4, 19);
+            this.đgv_san.Margin = new System.Windows.Forms.Padding(4);
+            this.đgv_san.Name = "đgv_san";
+            this.đgv_san.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,11 +238,12 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvQLS_Show.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvQLS_Show.RowHeadersWidth = 51;
-            this.dtgvQLS_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvQLS_Show.Size = new System.Drawing.Size(807, 549);
-            this.dtgvQLS_Show.TabIndex = 0;
+            this.đgv_san.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.đgv_san.RowHeadersWidth = 51;
+            this.đgv_san.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.đgv_san.Size = new System.Drawing.Size(807, 549);
+            this.đgv_san.TabIndex = 0;
+            this.đgv_san.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.đgv_san_CellClick);
             // 
             // UserName
             // 
@@ -282,26 +299,71 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Mã sân:";
             // 
-            // toolStripChucNang
+            // btn_thoatsan
             // 
-            this.toolStripChucNang.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStripChucNang.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnThem,
-            this.btnXoa,
+            this.btn_thoatsan.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.btn_thoatsan.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_themsan,
+            this.btn_xoasan,
             this.btnSua,
             this.btnReset,
             this.toolStripSeparator1,
             this.btnThoat});
-            this.toolStripChucNang.Location = new System.Drawing.Point(4, 4);
-            this.toolStripChucNang.Name = "toolStripChucNang";
-            this.toolStripChucNang.Size = new System.Drawing.Size(1210, 27);
-            this.toolStripChucNang.TabIndex = 13;
-            this.toolStripChucNang.Text = "toolStrip1";
+            this.btn_thoatsan.Location = new System.Drawing.Point(4, 4);
+            this.btn_thoatsan.Name = "btn_thoatsan";
+            this.btn_thoatsan.Size = new System.Drawing.Size(1210, 27);
+            this.btn_thoatsan.TabIndex = 13;
+            this.btn_thoatsan.Text = "toolStrip1";
+            // 
+            // btn_themsan
+            // 
+            this.btn_themsan.Image = global::QUANLYSANBONGMINI.Properties.Resources.Add;
+            this.btn_themsan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_themsan.Name = "btn_themsan";
+            this.btn_themsan.Size = new System.Drawing.Size(70, 24);
+            this.btn_themsan.Text = "Thêm";
+            this.btn_themsan.Click += new System.EventHandler(this.btn_themsan_Click);
+            // 
+            // btn_xoasan
+            // 
+            this.btn_xoasan.Image = global::QUANLYSANBONGMINI.Properties.Resources.Delete;
+            this.btn_xoasan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_xoasan.Name = "btn_xoasan";
+            this.btn_xoasan.Size = new System.Drawing.Size(59, 24);
+            this.btn_xoasan.Text = "Xoá";
+            this.btn_xoasan.Click += new System.EventHandler(this.btn_xoasan_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Image = global::QUANLYSANBONGMINI.Properties.Resources.Modify;
+            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(58, 24);
+            this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Image = global::QUANLYSANBONGMINI.Properties.Resources.reset_undo_arrow_icon_149006;
+            this.btnReset.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(69, 24);
+            this.btnReset.Text = "Reset";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Image = global::QUANLYSANBONGMINI.Properties.Resources.exit_32px;
+            this.btnThoat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(71, 24);
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // cbbloaisann
             // 
@@ -317,9 +379,9 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.toolStripChucNang);
+            this.tabPage1.Controls.Add(this.btn_thoatsan);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
@@ -341,11 +403,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.groupBox2.Controls.Add(this.txtmasan);
-            this.groupBox2.Controls.Add(this.cbbloaisan);
+            this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.txt_masan);
+            this.groupBox2.Controls.Add(this.cbo_loaisan);
             this.groupBox2.Controls.Add(this.panel1);
-            this.groupBox2.Controls.Add(this.txttensan);
+            this.groupBox2.Controls.Add(this.txt_tensan);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label8);
@@ -361,13 +423,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin";
             // 
-            // txtmasan
+            // txt_masan
             // 
-            this.txtmasan.Location = new System.Drawing.Point(148, 267);
-            this.txtmasan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtmasan.Name = "txtmasan";
-            this.txtmasan.Size = new System.Drawing.Size(203, 23);
-            this.txtmasan.TabIndex = 11;
+            this.txt_masan.Location = new System.Drawing.Point(148, 267);
+            this.txt_masan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_masan.Name = "txt_masan";
+            this.txt_masan.Size = new System.Drawing.Size(203, 23);
+            this.txt_masan.TabIndex = 11;
+            this.txt_masan.TextChanged += new System.EventHandler(this.txtmasan_TextChanged);
             // 
             // panel1
             // 
@@ -379,9 +442,21 @@
             this.panel1.Size = new System.Drawing.Size(225, 213);
             this.panel1.TabIndex = 8;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::QUANLYSANBONGMINI.Properties.Resources.traibanh;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.InitialImage = global::QUANLYSANBONGMINI.Properties.Resources.traibanh;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-18, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(274, 210);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Controls.Add(this.panel4);
             this.tabPage2.Controls.Add(this.toolStrip1);
@@ -404,7 +479,8 @@
             // 
             // grTKKH_DanhMuc
             // 
-            this.grTKKH_DanhMuc.Controls.Add(this.dtgvQLLS_Show);
+            this.grTKKH_DanhMuc.BackColor = System.Drawing.Color.White;
+            this.grTKKH_DanhMuc.Controls.Add(this.dgv_loaisan);
             this.grTKKH_DanhMuc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grTKKH_DanhMuc.Location = new System.Drawing.Point(0, 0);
             this.grTKKH_DanhMuc.Margin = new System.Windows.Forms.Padding(4);
@@ -415,25 +491,26 @@
             this.grTKKH_DanhMuc.TabStop = false;
             this.grTKKH_DanhMuc.Text = "Danh sách";
             // 
-            // dtgvQLLS_Show
+            // dgv_loaisan
             // 
-            this.dtgvQLLS_Show.AllowUserToAddRows = false;
-            this.dtgvQLLS_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvQLLS_Show.BackgroundColor = System.Drawing.Color.DarkGray;
-            this.dtgvQLLS_Show.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvQLLS_Show.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_loaisan.AllowUserToAddRows = false;
+            this.dgv_loaisan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_loaisan.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.dgv_loaisan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_loaisan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNCC,
             this.TenNCC,
             this.DiaChi});
-            this.dtgvQLLS_Show.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtgvQLLS_Show.Location = new System.Drawing.Point(4, 19);
-            this.dtgvQLLS_Show.Margin = new System.Windows.Forms.Padding(4);
-            this.dtgvQLLS_Show.Name = "dtgvQLLS_Show";
-            this.dtgvQLLS_Show.ReadOnly = true;
-            this.dtgvQLLS_Show.RowHeadersWidth = 51;
-            this.dtgvQLLS_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvQLLS_Show.Size = new System.Drawing.Size(809, 618);
-            this.dtgvQLLS_Show.TabIndex = 0;
+            this.dgv_loaisan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_loaisan.Location = new System.Drawing.Point(4, 19);
+            this.dgv_loaisan.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_loaisan.Name = "dgv_loaisan";
+            this.dgv_loaisan.ReadOnly = true;
+            this.dgv_loaisan.RowHeadersWidth = 51;
+            this.dgv_loaisan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_loaisan.Size = new System.Drawing.Size(809, 618);
+            this.dgv_loaisan.TabIndex = 0;
+            this.dgv_loaisan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvQLLS_Show_CellClick);
             // 
             // MaNCC
             // 
@@ -470,10 +547,10 @@
             // 
             // grTTKH_ThongTin
             // 
-            this.grTTKH_ThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grTTKH_ThongTin.Controls.Add(this.txtTenLoaiSan);
-            this.grTTKH_ThongTin.Controls.Add(this.txtloaisan);
-            this.grTTKH_ThongTin.Controls.Add(this.txtgialoaisan);
+            this.grTTKH_ThongTin.BackColor = System.Drawing.Color.White;
+            this.grTTKH_ThongTin.Controls.Add(this.txt_TenLoaiSan);
+            this.grTTKH_ThongTin.Controls.Add(this.txt_loaisan);
+            this.grTTKH_ThongTin.Controls.Add(this.txt_gialoaisan);
             this.grTTKH_ThongTin.Controls.Add(this.label5);
             this.grTTKH_ThongTin.Controls.Add(this.label4);
             this.grTTKH_ThongTin.Controls.Add(this.label3);
@@ -487,29 +564,31 @@
             this.grTTKH_ThongTin.TabStop = false;
             this.grTTKH_ThongTin.Text = "Thông tin";
             // 
-            // txtTenLoaiSan
+            // txt_TenLoaiSan
             // 
-            this.txtTenLoaiSan.Location = new System.Drawing.Point(158, 134);
-            this.txtTenLoaiSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenLoaiSan.Name = "txtTenLoaiSan";
-            this.txtTenLoaiSan.Size = new System.Drawing.Size(203, 22);
-            this.txtTenLoaiSan.TabIndex = 14;
+            this.txt_TenLoaiSan.Location = new System.Drawing.Point(158, 134);
+            this.txt_TenLoaiSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_TenLoaiSan.Name = "txt_TenLoaiSan";
+            this.txt_TenLoaiSan.Size = new System.Drawing.Size(203, 22);
+            this.txt_TenLoaiSan.TabIndex = 14;
             // 
-            // txtloaisan
+            // txt_loaisan
             // 
-            this.txtloaisan.Location = new System.Drawing.Point(158, 50);
-            this.txtloaisan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtloaisan.Name = "txtloaisan";
-            this.txtloaisan.Size = new System.Drawing.Size(203, 22);
-            this.txtloaisan.TabIndex = 13;
+            this.txt_loaisan.Location = new System.Drawing.Point(158, 50);
+            this.txt_loaisan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_loaisan.Name = "txt_loaisan";
+            this.txt_loaisan.Size = new System.Drawing.Size(203, 22);
+            this.txt_loaisan.TabIndex = 13;
             // 
-            // txtgialoaisan
+            // txt_gialoaisan
             // 
-            this.txtgialoaisan.Location = new System.Drawing.Point(158, 218);
-            this.txtgialoaisan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtgialoaisan.Name = "txtgialoaisan";
-            this.txtgialoaisan.Size = new System.Drawing.Size(203, 22);
-            this.txtgialoaisan.TabIndex = 11;
+            this.txt_gialoaisan.Location = new System.Drawing.Point(158, 218);
+            this.txt_gialoaisan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_gialoaisan.Name = "txt_gialoaisan";
+            this.txt_gialoaisan.Size = new System.Drawing.Size(203, 22);
+            this.txt_gialoaisan.TabIndex = 11;
+            this.txt_gialoaisan.TextChanged += new System.EventHandler(this.txtgialoaisan_TextChanged);
+            this.txt_gialoaisan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtgialoaisan_KeyPress);
             // 
             // label5
             // 
@@ -545,10 +624,10 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_Them,
-            this.btn_Xoa,
-            this.btn_Sua,
-            this.btn_Reset,
+            this.btn_Themloaisan,
+            this.btn_XoaLoaiSan,
+            this.btn_SuaLoaiSan,
+            this.btn_ResetLoaiSan,
             this.toolStripSeparator2,
             this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(4, 4);
@@ -557,114 +636,46 @@
             this.toolStrip1.TabIndex = 9;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // btn_Themloaisan
+            // 
+            this.btn_Themloaisan.Image = global::QUANLYSANBONGMINI.Properties.Resources.Add;
+            this.btn_Themloaisan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Themloaisan.Name = "btn_Themloaisan";
+            this.btn_Themloaisan.Size = new System.Drawing.Size(70, 24);
+            this.btn_Themloaisan.Text = "Thêm";
+            this.btn_Themloaisan.Click += new System.EventHandler(this.btn_Themloaisan_Click);
+            // 
+            // btn_XoaLoaiSan
+            // 
+            this.btn_XoaLoaiSan.Image = global::QUANLYSANBONGMINI.Properties.Resources.Delete;
+            this.btn_XoaLoaiSan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_XoaLoaiSan.Name = "btn_XoaLoaiSan";
+            this.btn_XoaLoaiSan.Size = new System.Drawing.Size(59, 24);
+            this.btn_XoaLoaiSan.Text = "Xoá";
+            this.btn_XoaLoaiSan.Click += new System.EventHandler(this.btn_XoaLoaiSan_Click);
+            // 
+            // btn_SuaLoaiSan
+            // 
+            this.btn_SuaLoaiSan.Image = global::QUANLYSANBONGMINI.Properties.Resources.Modify;
+            this.btn_SuaLoaiSan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_SuaLoaiSan.Name = "btn_SuaLoaiSan";
+            this.btn_SuaLoaiSan.Size = new System.Drawing.Size(58, 24);
+            this.btn_SuaLoaiSan.Text = "Sửa";
+            this.btn_SuaLoaiSan.Click += new System.EventHandler(this.btn_SuaLoaiSan_Click);
+            // 
+            // btn_ResetLoaiSan
+            // 
+            this.btn_ResetLoaiSan.Image = global::QUANLYSANBONGMINI.Properties.Resources.reset_undo_arrow_icon_149006;
+            this.btn_ResetLoaiSan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_ResetLoaiSan.Name = "btn_ResetLoaiSan";
+            this.btn_ResetLoaiSan.Size = new System.Drawing.Size(69, 24);
+            this.btn_ResetLoaiSan.Text = "Reset";
+            this.btn_ResetLoaiSan.Click += new System.EventHandler(this.btn_ResetLoaiSan_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Image = global::QUANLYSANBONGMINI.Properties.Resources.search_invoice;
-            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimKiem.Location = new System.Drawing.Point(517, 12);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
-            this.btnTimKiem.Size = new System.Drawing.Size(167, 49);
-            this.btnTimKiem.TabIndex = 1;
-            this.btnTimKiem.Text = "Tìm Kiếm";
-            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.UseVisualStyleBackColor = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::QUANLYSANBONGMINI.Properties.Resources.traibanh;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.InitialImage = global::QUANLYSANBONGMINI.Properties.Resources.traibanh;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(-18, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(274, 210);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Image = global::QUANLYSANBONGMINI.Properties.Resources.Add;
-            this.btnThem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(70, 24);
-            this.btnThem.Text = "Thêm";
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Image = global::QUANLYSANBONGMINI.Properties.Resources.Delete;
-            this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(59, 24);
-            this.btnXoa.Text = "Xoá";
-            // 
-            // btnSua
-            // 
-            this.btnSua.Image = global::QUANLYSANBONGMINI.Properties.Resources.Modify;
-            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(58, 24);
-            this.btnSua.Text = "Sửa";
-            // 
-            // btnReset
-            // 
-            this.btnReset.Image = global::QUANLYSANBONGMINI.Properties.Resources.reset_undo_arrow_icon_149006;
-            this.btnReset.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(69, 24);
-            this.btnReset.Text = "Reset";
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Image = global::QUANLYSANBONGMINI.Properties.Resources.exit_32px;
-            this.btnThoat.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(71, 24);
-            this.btnThoat.Text = "Thoát";
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.Image = global::QUANLYSANBONGMINI.Properties.Resources.Add;
-            this.btn_Them.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(70, 24);
-            this.btn_Them.Text = "Thêm";
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Image = global::QUANLYSANBONGMINI.Properties.Resources.Delete;
-            this.btn_Xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(59, 24);
-            this.btn_Xoa.Text = "Xoá";
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.Image = global::QUANLYSANBONGMINI.Properties.Resources.Modify;
-            this.btn_Sua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(58, 24);
-            this.btn_Sua.Text = "Sửa";
-            // 
-            // btn_Reset
-            // 
-            this.btn_Reset.Image = global::QUANLYSANBONGMINI.Properties.Resources.reset_undo_arrow_icon_149006;
-            this.btn_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(69, 24);
-            this.btn_Reset.Text = "Reset";
             // 
             // toolStripButton4
             // 
@@ -673,6 +684,11 @@
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(71, 24);
             this.toolStripButton4.Text = "Thoát";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frm_QuanLySan
             // 
@@ -681,13 +697,14 @@
             this.ClientSize = new System.Drawing.Size(1226, 705);
             this.Controls.Add(this.cbbloaisann);
             this.Name = "frm_QuanLySan";
-            this.Text = "frm_QuanLySan";
+            this.Text = "QUẢN LÝ SÂN BÓNG";
+            this.Load += new System.EventHandler(this.frm_QuanLySan_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.grTTKH_DanhSach.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvQLS_Show)).EndInit();
-            this.toolStripChucNang.ResumeLayout(false);
-            this.toolStripChucNang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.đgv_san)).EndInit();
+            this.btn_thoatsan.ResumeLayout(false);
+            this.btn_thoatsan.PerformLayout();
             this.cbbloaisann.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -695,42 +712,42 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.grTKKH_DanhMuc.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvQLLS_Show)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_loaisan)).EndInit();
             this.panel4.ResumeLayout(false);
             this.grTTKH_ThongTin.ResumeLayout(false);
             this.grTTKH_ThongTin.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cbbloaisan;
+        private System.Windows.Forms.ComboBox cbo_loaisan;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchUser;
-        private System.Windows.Forms.Button btnTimKiem;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Search;
+        private System.Windows.Forms.Button btn_TimKiem;
         private System.Windows.Forms.Label lblmasan;
-        private System.Windows.Forms.TextBox txttensan;
+        private System.Windows.Forms.TextBox txt_tensan;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox grTTKH_DanhSach;
-        private System.Windows.Forms.DataGridView dtgvQLS_Show;
+        private System.Windows.Forms.DataGridView đgv_san;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         private System.Windows.Forms.DataGridViewTextBoxColumn DisplayName;
         private System.Windows.Forms.DataGridViewTextBoxColumn PassWord;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ToolStrip toolStripChucNang;
-        private System.Windows.Forms.ToolStripButton btnThem;
-        private System.Windows.Forms.ToolStripButton btnXoa;
+        private System.Windows.Forms.ToolStrip btn_thoatsan;
+        private System.Windows.Forms.ToolStripButton btn_themsan;
+        private System.Windows.Forms.ToolStripButton btn_xoasan;
         private System.Windows.Forms.ToolStripButton btnSua;
         private System.Windows.Forms.ToolStripButton btnReset;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -739,28 +756,28 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtmasan;
+        private System.Windows.Forms.TextBox txt_masan;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.GroupBox grTKKH_DanhMuc;
-        private System.Windows.Forms.DataGridView dtgvQLLS_Show;
+        private System.Windows.Forms.DataGridView dgv_loaisan;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox grTTKH_ThongTin;
-        private System.Windows.Forms.TextBox txtTenLoaiSan;
-        private System.Windows.Forms.TextBox txtloaisan;
-        private System.Windows.Forms.TextBox txtgialoaisan;
+        private System.Windows.Forms.TextBox txt_TenLoaiSan;
+        private System.Windows.Forms.TextBox txt_loaisan;
+        private System.Windows.Forms.TextBox txt_gialoaisan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btn_Them;
-        private System.Windows.Forms.ToolStripButton btn_Xoa;
-        private System.Windows.Forms.ToolStripButton btn_Sua;
-        private System.Windows.Forms.ToolStripButton btn_Reset;
+        private System.Windows.Forms.ToolStripButton btn_Themloaisan;
+        private System.Windows.Forms.ToolStripButton btn_XoaLoaiSan;
+        private System.Windows.Forms.ToolStripButton btn_SuaLoaiSan;
+        private System.Windows.Forms.ToolStripButton btn_ResetLoaiSan;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ErrorProvider errorProvider1;

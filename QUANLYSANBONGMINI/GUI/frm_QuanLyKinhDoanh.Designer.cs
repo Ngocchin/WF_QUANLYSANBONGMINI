@@ -59,15 +59,22 @@
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.toolStripChucNang = new System.Windows.Forms.ToolStrip();
+            this.btnXoa = new System.Windows.Forms.ToolStripButton();
+            this.btnSua = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnThanhToan = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnThoat = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_ThongKeNam = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.cboNam = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cboThang = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnThang = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,19 +115,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_them = new System.Windows.Forms.ToolStripButton();
             this.btn_xoa = new System.Windows.Forms.ToolStripButton();
             this.btn_sua = new System.Windows.Forms.ToolStripButton();
             this.btn_reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.btnThang = new System.Windows.Forms.Button();
-            this.btn_ThongKeNam = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.ToolStripButton();
-            this.btnSua = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.btnThanhToan = new System.Windows.Forms.ToolStripButton();
-            this.btnThoat = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvHD_Show)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -191,6 +191,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 7;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -214,7 +215,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtTongTien, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label16, 3, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 35);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 31);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -223,7 +224,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1194, 671);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1194, 675);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // label11
@@ -275,6 +276,8 @@
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(164, 22);
             this.txtDonGia.TabIndex = 3;
+            this.txtDonGia.TextChanged += new System.EventHandler(this.txtDonGia_TextChanged);
+            this.txtDonGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDonGia_KeyPress);
             // 
             // label15
             // 
@@ -311,8 +314,9 @@
             this.dgrvHD_Show.RowHeadersWidth = 51;
             this.dgrvHD_Show.RowTemplate.Height = 24;
             this.dgrvHD_Show.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgrvHD_Show.Size = new System.Drawing.Size(1188, 545);
+            this.dgrvHD_Show.Size = new System.Drawing.Size(1188, 549);
             this.dgrvHD_Show.TabIndex = 15;
+            this.dgrvHD_Show.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrvHD_Show_CellClick);
             // 
             // Column7
             // 
@@ -374,6 +378,8 @@
             this.txtTongphutda.Name = "txtTongphutda";
             this.txtTongphutda.Size = new System.Drawing.Size(164, 22);
             this.txtTongphutda.TabIndex = 16;
+            this.txtTongphutda.TextChanged += new System.EventHandler(this.txtTongphutda_TextChanged);
+            this.txtTongphutda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTongphutda_KeyPress);
             // 
             // txtTongTien
             // 
@@ -382,6 +388,8 @@
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(164, 22);
             this.txtTongTien.TabIndex = 17;
+            this.txtTongTien.TextChanged += new System.EventHandler(this.txtTongTien_TextChanged);
+            this.txtTongTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTongTien_KeyPress);
             // 
             // label16
             // 
@@ -395,7 +403,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.tableLayoutPanel1);
             this.tabPage3.Controls.Add(this.toolStripChucNang);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -418,17 +426,61 @@
             this.btnThoat});
             this.toolStripChucNang.Location = new System.Drawing.Point(4, 4);
             this.toolStripChucNang.Name = "toolStripChucNang";
-            this.toolStripChucNang.Size = new System.Drawing.Size(1194, 31);
+            this.toolStripChucNang.Size = new System.Drawing.Size(1194, 27);
             this.toolStripChucNang.TabIndex = 6;
             this.toolStripChucNang.Text = "toolStrip1";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Image = global::QUANLYSANBONGMINI.Properties.Resources.Delete;
+            this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(59, 24);
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Image = global::QUANLYSANBONGMINI.Properties.Resources.Modify;
+            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSua.MergeAction = System.Windows.Forms.MergeAction.Remove;
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(58, 24);
+            this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = global::QUANLYSANBONGMINI.Properties.Resources.xuất;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(122, 24);
+            this.toolStripButton1.Text = "Xuất hóa đơn";
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Image = global::QUANLYSANBONGMINI.Properties.Resources.thanhtoan;
+            this.btnThanhToan.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(109, 24);
+            this.btnThanhToan.Text = "Thanh Toán";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Image = global::QUANLYSANBONGMINI.Properties.Resources.exit_32px;
+            this.btnThoat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(71, 24);
+            this.btnThoat.Text = "Thoát";
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.btn_ThongKeNam);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -448,6 +500,20 @@
             this.label8.Size = new System.Drawing.Size(39, 16);
             this.label8.TabIndex = 40;
             this.label8.Text = "Năm:";
+            // 
+            // btn_ThongKeNam
+            // 
+            this.btn_ThongKeNam.Image = global::QUANLYSANBONGMINI.Properties.Resources.search_invoice;
+            this.btn_ThongKeNam.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_ThongKeNam.Location = new System.Drawing.Point(249, 26);
+            this.btn_ThongKeNam.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ThongKeNam.Name = "btn_ThongKeNam";
+            this.btn_ThongKeNam.Size = new System.Drawing.Size(185, 49);
+            this.btn_ThongKeNam.TabIndex = 34;
+            this.btn_ThongKeNam.Text = "Thống Kê Năm";
+            this.btn_ThongKeNam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ThongKeNam.UseVisualStyleBackColor = true;
+            this.btn_ThongKeNam.Click += new System.EventHandler(this.btn_ThongKeNam_Click);
             // 
             // comboBox1
             // 
@@ -523,6 +589,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.cboThang);
@@ -531,13 +598,28 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(654, 96);
+            this.groupBox2.Size = new System.Drawing.Size(659, 96);
             this.groupBox2.TabIndex = 39;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Theo Tháng";
             // 
+            // btnThang
+            // 
+            this.btnThang.Image = global::QUANLYSANBONGMINI.Properties.Resources.search_invoice;
+            this.btnThang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThang.Location = new System.Drawing.Point(411, 26);
+            this.btnThang.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThang.Name = "btnThang";
+            this.btnThang.Size = new System.Drawing.Size(188, 49);
+            this.btnThang.TabIndex = 36;
+            this.btnThang.Text = "Thống Kê Tháng";
+            this.btnThang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThang.UseVisualStyleBackColor = true;
+            this.btnThang.Click += new System.EventHandler(this.btnThang_Click);
+            // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -569,6 +651,7 @@
             // 
             // grTTKH_DanhSach
             // 
+            this.grTTKH_DanhSach.BackColor = System.Drawing.Color.White;
             this.grTTKH_DanhSach.Controls.Add(this.dtgvTTKH_Show);
             this.grTTKH_DanhSach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grTTKH_DanhSach.Location = new System.Drawing.Point(0, 0);
@@ -652,6 +735,8 @@
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(248, 22);
             this.txtSoDienThoai.TabIndex = 3;
+            this.txtSoDienThoai.TextChanged += new System.EventHandler(this.txtSoDienThoai_TextChanged);
+            this.txtSoDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoDienThoai_KeyPress);
             // 
             // label17
             // 
@@ -701,6 +786,7 @@
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // label1
             // 
@@ -732,6 +818,7 @@
             // 
             // grQLDT_ThongTin
             // 
+            this.grQLDT_ThongTin.BackColor = System.Drawing.Color.White;
             this.grQLDT_ThongTin.Controls.Add(this.label1);
             this.grQLDT_ThongTin.Controls.Add(this.txtQLDT_DVT);
             this.grQLDT_ThongTin.Controls.Add(this.label29);
@@ -779,6 +866,7 @@
             // 
             // grTTKH_TimKiem
             // 
+            this.grTTKH_TimKiem.BackColor = System.Drawing.Color.White;
             this.grTTKH_TimKiem.Controls.Add(this.label17);
             this.grTTKH_TimKiem.Controls.Add(this.txtSearchKH);
             this.grTTKH_TimKiem.Controls.Add(this.btnTimKiem);
@@ -856,7 +944,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.grQLDT_ThongTin);
@@ -883,7 +971,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.toolStrip1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -916,6 +1004,7 @@
             // 
             // grTTKH_ThongTin
             // 
+            this.grTTKH_ThongTin.BackColor = System.Drawing.Color.White;
             this.grTTKH_ThongTin.Controls.Add(this.txtSoDienThoai);
             this.grTTKH_ThongTin.Controls.Add(this.txtDiaChi);
             this.grTTKH_ThongTin.Controls.Add(this.txtTenKhachHang);
@@ -949,11 +1038,12 @@
             this.txtMaKhachHang.Name = "txtMaKhachHang";
             this.txtMaKhachHang.Size = new System.Drawing.Size(248, 22);
             this.txtMaKhachHang.TabIndex = 0;
+            this.txtMaKhachHang.TextChanged += new System.EventHandler(this.txtMaKhachHang_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 309);
+            this.label6.Location = new System.Drawing.Point(30, 303);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 16);
@@ -992,6 +1082,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.White;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_them,
@@ -1006,11 +1097,6 @@
             this.toolStrip1.TabIndex = 9;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
             // btn_them
             // 
             this.btn_them.Image = global::QUANLYSANBONGMINI.Properties.Resources.Add;
@@ -1018,6 +1104,7 @@
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(70, 24);
             this.btn_them.Text = "Thêm";
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_xoa
             // 
@@ -1026,6 +1113,7 @@
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(59, 24);
             this.btn_xoa.Text = "Xoá";
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -1034,6 +1122,7 @@
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(58, 24);
             this.btn_sua.Text = "Sửa";
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_reset
             // 
@@ -1042,6 +1131,12 @@
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(69, 24);
             this.btn_reset.Text = "Reset";
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton4
             // 
@@ -1050,73 +1145,7 @@
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(71, 24);
             this.toolStripButton4.Text = "Thoát";
-            // 
-            // btnThang
-            // 
-            this.btnThang.Image = global::QUANLYSANBONGMINI.Properties.Resources.search_invoice;
-            this.btnThang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThang.Location = new System.Drawing.Point(411, 26);
-            this.btnThang.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThang.Name = "btnThang";
-            this.btnThang.Size = new System.Drawing.Size(188, 49);
-            this.btnThang.TabIndex = 36;
-            this.btnThang.Text = "Thống Kê Tháng";
-            this.btnThang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThang.UseVisualStyleBackColor = true;
-            // 
-            // btn_ThongKeNam
-            // 
-            this.btn_ThongKeNam.Image = global::QUANLYSANBONGMINI.Properties.Resources.search_invoice;
-            this.btn_ThongKeNam.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_ThongKeNam.Location = new System.Drawing.Point(247, 31);
-            this.btn_ThongKeNam.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ThongKeNam.Name = "btn_ThongKeNam";
-            this.btn_ThongKeNam.Size = new System.Drawing.Size(185, 49);
-            this.btn_ThongKeNam.TabIndex = 34;
-            this.btn_ThongKeNam.Text = "Thống Kê Năm";
-            this.btn_ThongKeNam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThongKeNam.UseVisualStyleBackColor = true;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Image = global::QUANLYSANBONGMINI.Properties.Resources.Delete;
-            this.btnXoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(59, 28);
-            this.btnXoa.Text = "Xoá";
-            // 
-            // btnSua
-            // 
-            this.btnSua.Image = global::QUANLYSANBONGMINI.Properties.Resources.Modify;
-            this.btnSua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSua.MergeAction = System.Windows.Forms.MergeAction.Remove;
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(58, 28);
-            this.btnSua.Text = "Sửa";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = global::QUANLYSANBONGMINI.Properties.Resources.xuất;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(122, 28);
-            this.toolStripButton1.Text = "Xuất hóa đơn";
-            // 
-            // btnThanhToan
-            // 
-            this.btnThanhToan.Image = global::QUANLYSANBONGMINI.Properties.Resources.thanhtoan;
-            this.btnThanhToan.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(109, 28);
-            this.btnThanhToan.Text = "Thanh Toán";
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Image = global::QUANLYSANBONGMINI.Properties.Resources.exit_32px;
-            this.btnThoat.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(71, 28);
-            this.btnThoat.Text = "Thoát";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // frm_QuanLyKinhDoanh
             // 
@@ -1125,7 +1154,8 @@
             this.ClientSize = new System.Drawing.Size(1210, 739);
             this.Controls.Add(this.tabControl1);
             this.Name = "frm_QuanLyKinhDoanh";
-            this.Text = "QUẢN LÝ KINH DOANH";
+            this.Text = "QUẢN LÝ KHÁCH HÀNG/HÓA ĐƠN";
+            this.Load += new System.EventHandler(this.frm_QuanLyKinhDoanh_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvHD_Show)).EndInit();

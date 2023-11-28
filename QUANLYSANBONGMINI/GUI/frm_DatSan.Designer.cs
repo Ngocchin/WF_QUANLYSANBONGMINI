@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSuaSan = new System.Windows.Forms.Button();
-            this.btnHuySan = new System.Windows.Forms.Button();
+            this.btn_Xoasan = new System.Windows.Forms.Button();
+            this.btn_TraSan = new System.Windows.Forms.Button();
             this.dtGioKetThuc = new System.Windows.Forms.DateTimePicker();
             this.dtGioBatDau = new System.Windows.Forms.DateTimePicker();
             this.btnDatSan = new System.Windows.Forms.Button();
@@ -47,6 +47,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.grThongTin = new System.Windows.Forms.GroupBox();
+            this.btnSan6 = new System.Windows.Forms.Button();
+            this.btnSan5 = new System.Windows.Forms.Button();
+            this.btnSan4 = new System.Windows.Forms.Button();
+            this.btnSan3 = new System.Windows.Forms.Button();
+            this.btnSan2 = new System.Windows.Forms.Button();
+            this.btnSan1 = new System.Windows.Forms.Button();
             this.cbbLoaiThue = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,7 +62,7 @@
             this.dateKT = new System.Windows.Forms.DateTimePicker();
             this.cbbmakh = new System.Windows.Forms.ComboBox();
             this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_datsan = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,12 +70,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnSan1 = new System.Windows.Forms.Button();
-            this.btnSan2 = new System.Windows.Forms.Button();
-            this.btnSan3 = new System.Windows.Forms.Button();
-            this.btnSan4 = new System.Windows.Forms.Button();
-            this.btnSan5 = new System.Windows.Forms.Button();
-            this.btnSan6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.sanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thueSanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -78,7 +78,7 @@
             this.grThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nbDonGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_datsan)).BeginInit();
             this.SuspendLayout();
             // 
             // Column7
@@ -88,29 +88,31 @@
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
-            // btnSuaSan
+            // btn_Xoasan
             // 
-            this.btnSuaSan.BackColor = System.Drawing.Color.Green;
-            this.btnSuaSan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaSan.ForeColor = System.Drawing.Color.White;
-            this.btnSuaSan.Location = new System.Drawing.Point(400, 317);
-            this.btnSuaSan.Name = "btnSuaSan";
-            this.btnSuaSan.Size = new System.Drawing.Size(137, 40);
-            this.btnSuaSan.TabIndex = 33;
-            this.btnSuaSan.Text = "XOÁ";
-            this.btnSuaSan.UseVisualStyleBackColor = false;
+            this.btn_Xoasan.BackColor = System.Drawing.Color.Green;
+            this.btn_Xoasan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Xoasan.ForeColor = System.Drawing.Color.White;
+            this.btn_Xoasan.Location = new System.Drawing.Point(400, 317);
+            this.btn_Xoasan.Name = "btn_Xoasan";
+            this.btn_Xoasan.Size = new System.Drawing.Size(137, 40);
+            this.btn_Xoasan.TabIndex = 33;
+            this.btn_Xoasan.Text = "XOÁ";
+            this.btn_Xoasan.UseVisualStyleBackColor = false;
+            this.btn_Xoasan.Click += new System.EventHandler(this.btn_Xoasan_Click);
             // 
-            // btnHuySan
+            // btn_TraSan
             // 
-            this.btnHuySan.BackColor = System.Drawing.Color.Green;
-            this.btnHuySan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuySan.ForeColor = System.Drawing.Color.White;
-            this.btnHuySan.Location = new System.Drawing.Point(207, 317);
-            this.btnHuySan.Name = "btnHuySan";
-            this.btnHuySan.Size = new System.Drawing.Size(137, 40);
-            this.btnHuySan.TabIndex = 32;
-            this.btnHuySan.Text = "TRẢ SÂN";
-            this.btnHuySan.UseVisualStyleBackColor = false;
+            this.btn_TraSan.BackColor = System.Drawing.Color.Green;
+            this.btn_TraSan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TraSan.ForeColor = System.Drawing.Color.White;
+            this.btn_TraSan.Location = new System.Drawing.Point(204, 317);
+            this.btn_TraSan.Name = "btn_TraSan";
+            this.btn_TraSan.Size = new System.Drawing.Size(137, 40);
+            this.btn_TraSan.TabIndex = 32;
+            this.btn_TraSan.Text = "TRẢ SÂN";
+            this.btn_TraSan.UseVisualStyleBackColor = false;
+            this.btn_TraSan.Click += new System.EventHandler(this.btn_TraSan_Click);
             // 
             // dtGioKetThuc
             // 
@@ -145,6 +147,7 @@
             this.btnDatSan.TabIndex = 28;
             this.btnDatSan.Text = "ĐẶT SÂN";
             this.btnDatSan.UseVisualStyleBackColor = false;
+            this.btnDatSan.Click += new System.EventHandler(this.btnDatSan_Click);
             // 
             // cbbsan
             // 
@@ -158,6 +161,7 @@
             this.cbbsan.Size = new System.Drawing.Size(306, 24);
             this.cbbsan.TabIndex = 5;
             this.cbbsan.ValueMember = "Ma_San";
+            this.cbbsan.SelectedIndexChanged += new System.EventHandler(this.cbbsan_SelectedIndexChanged);
             // 
             // dateBD
             // 
@@ -223,7 +227,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.grThongTin);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
@@ -235,7 +239,7 @@
             // 
             // grThongTin
             // 
-            this.grThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.grThongTin.BackColor = System.Drawing.Color.White;
             this.grThongTin.Controls.Add(this.btnSan6);
             this.grThongTin.Controls.Add(this.btnSan5);
             this.grThongTin.Controls.Add(this.btnSan4);
@@ -250,9 +254,9 @@
             this.grThongTin.Controls.Add(this.label1);
             this.grThongTin.Controls.Add(this.dateKT);
             this.grThongTin.Controls.Add(this.cbbmakh);
-            this.grThongTin.Controls.Add(this.dataGridView1);
-            this.grThongTin.Controls.Add(this.btnSuaSan);
-            this.grThongTin.Controls.Add(this.btnHuySan);
+            this.grThongTin.Controls.Add(this.dgv_datsan);
+            this.grThongTin.Controls.Add(this.btn_Xoasan);
+            this.grThongTin.Controls.Add(this.btn_TraSan);
             this.grThongTin.Controls.Add(this.dtGioKetThuc);
             this.grThongTin.Controls.Add(this.dtGioBatDau);
             this.grThongTin.Controls.Add(this.btnDatSan);
@@ -272,6 +276,78 @@
             this.grThongTin.TabStop = false;
             this.grThongTin.Text = "Thông tin";
             // 
+            // btnSan6
+            // 
+            this.btnSan6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSan6.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
+            this.btnSan6.Location = new System.Drawing.Point(1204, 174);
+            this.btnSan6.Name = "btnSan6";
+            this.btnSan6.Size = new System.Drawing.Size(139, 119);
+            this.btnSan6.TabIndex = 47;
+            this.btnSan6.Text = "SÂN 6";
+            this.btnSan6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSan6.UseVisualStyleBackColor = true;
+            // 
+            // btnSan5
+            // 
+            this.btnSan5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSan5.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
+            this.btnSan5.Location = new System.Drawing.Point(1008, 174);
+            this.btnSan5.Name = "btnSan5";
+            this.btnSan5.Size = new System.Drawing.Size(139, 119);
+            this.btnSan5.TabIndex = 47;
+            this.btnSan5.Text = "SÂN 5";
+            this.btnSan5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSan5.UseVisualStyleBackColor = true;
+            // 
+            // btnSan4
+            // 
+            this.btnSan4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSan4.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
+            this.btnSan4.Location = new System.Drawing.Point(822, 174);
+            this.btnSan4.Name = "btnSan4";
+            this.btnSan4.Size = new System.Drawing.Size(139, 119);
+            this.btnSan4.TabIndex = 47;
+            this.btnSan4.Text = "SÂN 4";
+            this.btnSan4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSan4.UseVisualStyleBackColor = true;
+            // 
+            // btnSan3
+            // 
+            this.btnSan3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSan3.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
+            this.btnSan3.Location = new System.Drawing.Point(1204, 22);
+            this.btnSan3.Name = "btnSan3";
+            this.btnSan3.Size = new System.Drawing.Size(139, 119);
+            this.btnSan3.TabIndex = 47;
+            this.btnSan3.Text = "SÂN 3";
+            this.btnSan3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSan3.UseVisualStyleBackColor = true;
+            // 
+            // btnSan2
+            // 
+            this.btnSan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSan2.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
+            this.btnSan2.Location = new System.Drawing.Point(1008, 20);
+            this.btnSan2.Name = "btnSan2";
+            this.btnSan2.Size = new System.Drawing.Size(139, 119);
+            this.btnSan2.TabIndex = 47;
+            this.btnSan2.Text = "SÂN 2";
+            this.btnSan2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSan2.UseVisualStyleBackColor = true;
+            // 
+            // btnSan1
+            // 
+            this.btnSan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSan1.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
+            this.btnSan1.Location = new System.Drawing.Point(822, 22);
+            this.btnSan1.Name = "btnSan1";
+            this.btnSan1.Size = new System.Drawing.Size(139, 119);
+            this.btnSan1.TabIndex = 47;
+            this.btnSan1.Text = "SÂN 1";
+            this.btnSan1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSan1.UseVisualStyleBackColor = true;
+            // 
             // cbbLoaiThue
             // 
             this.cbbLoaiThue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -284,6 +360,7 @@
             this.cbbLoaiThue.Name = "cbbLoaiThue";
             this.cbbLoaiThue.Size = new System.Drawing.Size(311, 24);
             this.cbbLoaiThue.TabIndex = 45;
+            this.cbbLoaiThue.SelectedIndexChanged += new System.EventHandler(this.cbbLoaiThue_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -366,15 +443,15 @@
             this.cbbmakh.TabIndex = 35;
             this.cbbmakh.ValueMember = "Ma_KhachHang";
             // 
-            // dataGridView1
+            // dgv_datsan
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_datsan.AllowUserToAddRows = false;
+            this.dgv_datsan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_datsan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_datsan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_datsan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
             this.Column1,
             this.Column2,
@@ -383,14 +460,15 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(8, 375);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1335, 324);
-            this.dataGridView1.TabIndex = 34;
+            this.dgv_datsan.Location = new System.Drawing.Point(8, 375);
+            this.dgv_datsan.Name = "dgv_datsan";
+            this.dgv_datsan.ReadOnly = true;
+            this.dgv_datsan.RowHeadersWidth = 51;
+            this.dgv_datsan.RowTemplate.Height = 24;
+            this.dgv_datsan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_datsan.Size = new System.Drawing.Size(1335, 324);
+            this.dgv_datsan.TabIndex = 34;
+            this.dgv_datsan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_datsan_CellClick);
             // 
             // STT
             // 
@@ -444,78 +522,6 @@
             this.label14.TabIndex = 15;
             this.label14.Text = "Bắt đầu:";
             // 
-            // btnSan1
-            // 
-            this.btnSan1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSan1.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
-            this.btnSan1.Location = new System.Drawing.Point(822, 22);
-            this.btnSan1.Name = "btnSan1";
-            this.btnSan1.Size = new System.Drawing.Size(139, 119);
-            this.btnSan1.TabIndex = 47;
-            this.btnSan1.Text = "SÂN 1";
-            this.btnSan1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSan1.UseVisualStyleBackColor = true;
-            // 
-            // btnSan2
-            // 
-            this.btnSan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSan2.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
-            this.btnSan2.Location = new System.Drawing.Point(1008, 20);
-            this.btnSan2.Name = "btnSan2";
-            this.btnSan2.Size = new System.Drawing.Size(139, 119);
-            this.btnSan2.TabIndex = 47;
-            this.btnSan2.Text = "SÂN 2";
-            this.btnSan2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSan2.UseVisualStyleBackColor = true;
-            // 
-            // btnSan3
-            // 
-            this.btnSan3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSan3.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
-            this.btnSan3.Location = new System.Drawing.Point(1204, 22);
-            this.btnSan3.Name = "btnSan3";
-            this.btnSan3.Size = new System.Drawing.Size(139, 119);
-            this.btnSan3.TabIndex = 47;
-            this.btnSan3.Text = "SÂN 3";
-            this.btnSan3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSan3.UseVisualStyleBackColor = true;
-            // 
-            // btnSan4
-            // 
-            this.btnSan4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSan4.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
-            this.btnSan4.Location = new System.Drawing.Point(822, 174);
-            this.btnSan4.Name = "btnSan4";
-            this.btnSan4.Size = new System.Drawing.Size(139, 119);
-            this.btnSan4.TabIndex = 47;
-            this.btnSan4.Text = "SÂN 4";
-            this.btnSan4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSan4.UseVisualStyleBackColor = true;
-            // 
-            // btnSan5
-            // 
-            this.btnSan5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSan5.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
-            this.btnSan5.Location = new System.Drawing.Point(1008, 174);
-            this.btnSan5.Name = "btnSan5";
-            this.btnSan5.Size = new System.Drawing.Size(139, 119);
-            this.btnSan5.TabIndex = 47;
-            this.btnSan5.Text = "SÂN 5";
-            this.btnSan5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSan5.UseVisualStyleBackColor = true;
-            // 
-            // btnSan6
-            // 
-            this.btnSan6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSan6.Image = global::QUANLYSANBONGMINI.Properties.Resources.sanbong11;
-            this.btnSan6.Location = new System.Drawing.Point(1204, 174);
-            this.btnSan6.Name = "btnSan6";
-            this.btnSan6.Size = new System.Drawing.Size(139, 119);
-            this.btnSan6.TabIndex = 47;
-            this.btnSan6.Text = "SÂN 6";
-            this.btnSan6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSan6.UseVisualStyleBackColor = true;
-            // 
             // frm_DatSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -524,7 +530,8 @@
             this.Controls.Add(this.tabControl1);
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Name = "frm_DatSan";
-            this.Text = "ĐẶT SÂN";
+            this.Text = "ĐẶT SÂN/ TRẢ SÂN";
+            this.Load += new System.EventHandler(this.frm_DatSan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thueSanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -534,7 +541,7 @@
             this.grThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nbDonGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_datsan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -542,8 +549,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.Button btnSuaSan;
-        private System.Windows.Forms.Button btnHuySan;
+        private System.Windows.Forms.Button btn_Xoasan;
+        private System.Windows.Forms.Button btn_TraSan;
         private System.Windows.Forms.DateTimePicker dtGioKetThuc;
         private System.Windows.Forms.DateTimePicker dtGioBatDau;
         private System.Windows.Forms.Button btnDatSan;
@@ -568,7 +575,7 @@
         private System.Windows.Forms.DateTimePicker dateKT;
         private System.Windows.Forms.ComboBox cbbmakh;
         private System.Windows.Forms.BindingSource khachHangBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_datsan;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

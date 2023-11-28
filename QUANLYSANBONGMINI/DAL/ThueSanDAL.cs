@@ -17,21 +17,22 @@ namespace QUANLYSANBONGMINI.DAL
         DataSet ds_San = new DataSet();
         SqlDataAdapter san;
         SqlDataAdapter matkhachang;
-        public int ExecuteNonQuery(string sql)
-        {
-            int dung = 0;
-            try
-            {
-                conn = kn.conDB();
-                conn.Open(); ;
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                dung = cmd.ExecuteNonQuery();
-                conn.Close();
-            }
-            catch
-            { }
-            return dung;
-        }
+
+        //public int ExecuteNonQuery(string sql)
+        //{
+        //    int dung = 0;
+        //    try
+        //    {
+        //        conn = kn.conDB();
+        //        conn.Open(); ;
+        //        SqlCommand cmd = new SqlCommand(sql, conn);
+        //        dung = cmd.ExecuteNonQuery();
+        //        conn.Close();
+        //    }
+        //    catch
+        //    { }
+        //    return dung;
+        //}
 
         public DataTable HienThiDuLieu() //trả về 1 bảng
         {
@@ -92,7 +93,7 @@ namespace QUANLYSANBONGMINI.DAL
         {
             string sqlThem = "INSERT INTO [ThueSan] ([Ma_San], [Ma_KhachHang],[NgayThue_San], [Gio_BD],[Gio_KT]) VALUES ('" + masan + "','" + makh + "', '" + ngaythuesan + "',N'" + gioBD + "',N'" + gioKT + "')";
             bool kt = false;
-            if (ExecuteNonQuery(sqlThem) > 0)
+            if (kn.ExecuteNonQuery(sqlThem) > 0)
             {
                 kt = true;
             }

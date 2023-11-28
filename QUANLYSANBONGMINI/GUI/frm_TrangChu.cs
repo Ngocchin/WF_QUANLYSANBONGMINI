@@ -21,6 +21,21 @@ namespace QUANLYSANBONGMINI.GUI
             this.pass1 = pass1;
             this.quyen1 = quyen1;
         }
+        private Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.Dock = DockStyle.Fill;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            panelDesktopPane.Controls.Add(childForm);
+            panelDesktopPane.Tag = childForm;
+            lblTitle.Text = childForm.Text;
+            childForm.BringToFront();
+            childForm.Show();
+        }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
@@ -37,41 +52,29 @@ namespace QUANLYSANBONGMINI.GUI
         private void btnHeThong_Click(object sender, EventArgs e)
         {
             panelDesktopPane.Controls.Clear();
-            frm_HeThong f = new frm_HeThong();
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            panelDesktopPane.Controls.Add(f);
-            f.Show();
+            frm_HeThong f = new frm_HeThong();            
+            openChildForm(f);            
         }
 
         private void btnDatSan_Click(object sender, EventArgs e)
         {
             panelDesktopPane.Controls.Clear();
             frm_DatSan f = new frm_DatSan();
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            panelDesktopPane.Controls.Add(f);
-            f.Show();
+            openChildForm(f);
         }
 
         private void btnQuanLySan_Click(object sender, EventArgs e)
         {
             panelDesktopPane.Controls.Clear();
             frm_QuanLySan f = new frm_QuanLySan();
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            panelDesktopPane.Controls.Add(f);
-            f.Show();
+            openChildForm(f);
         }
 
         private void btnQuanLyKinhDoanh_Click(object sender, EventArgs e)
         {
             panelDesktopPane.Controls.Clear();
             frm_QuanLyKinhDoanh f = new frm_QuanLyKinhDoanh();
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            panelDesktopPane.Controls.Add(f);
-            f.Show();
+            openChildForm(f);
         }
 
         private void frm_TrangChu_Load(object sender, EventArgs e)
