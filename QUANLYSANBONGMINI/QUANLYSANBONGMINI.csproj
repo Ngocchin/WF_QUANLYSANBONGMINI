@@ -70,10 +70,10 @@
     </Compile>
     <Compile Include="DAL\SanDAL.cs" />
     <Compile Include="DAL\ThueSanDAL.cs" />
-    <Compile Include="frm_DangNhap.cs">
+    <Compile Include="GUI\frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_DangNhap.Designer.cs">
+    <Compile Include="GUI\frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_HeThong.cs">
@@ -108,7 +108,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_DangNhap.resx">
+    <EmbeddedResource Include="GUI\frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_HeThong.resx">
@@ -234,6 +234,20 @@
     <None Include="Resources\traibanh.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\teamwork1.png" />
+    <None Include="Resources\teamwork.png" />
+    <None Include="Resources\analytical-skill.gif" />
+    <None Include="Resources\bussiness-man.png" />
+    <None Include="Resources\hotel %282%29.png" />
+    <None Include="Resources\0.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\01.jpg" />
+    <None Include="Resources\images1.jpg" />
+    <None Include="Resources\analytical-skill1.gif" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\analytical-skill2.gif" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\search2.png" />
     <Content Include="Resources\Soccer_icon-icons.com_67819.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

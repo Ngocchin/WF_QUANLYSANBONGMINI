@@ -33,13 +33,13 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.btnQuanLyKinhDoanh = new System.Windows.Forms.Button();
             this.btnQuanLySan = new System.Windows.Forms.Button();
             this.btnDatSan = new System.Windows.Forms.Button();
             this.btnHeThong = new System.Windows.Forms.Button();
             this.btnlogo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
             this.panelTitleBar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogo)).BeginInit();
@@ -52,7 +52,7 @@
             this.lblxinchao.AutoSize = true;
             this.lblxinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblxinchao.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblxinchao.Location = new System.Drawing.Point(111, 129);
+            this.lblxinchao.Location = new System.Drawing.Point(71, 126);
             this.lblxinchao.Name = "lblxinchao";
             this.lblxinchao.Size = new System.Drawing.Size(73, 18);
             this.lblxinchao.TabIndex = 21;
@@ -77,28 +77,28 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Red;
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(667, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(207, 30);
+            this.lblTitle.Size = new System.Drawing.Size(272, 30);
             this.lblTitle.TabIndex = 6;
-            this.lblTitle.Text = "SÂN BÓNG 101";
+            this.lblTitle.Text = "CLB SÂN BÓNG 101";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.Transparent;
+            this.panelTitleBar.BackColor = System.Drawing.Color.SeaGreen;
             this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(366, 0);
+            this.panelTitleBar.Location = new System.Drawing.Point(411, 0);
             this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1042, 55);
+            this.panelTitleBar.Size = new System.Drawing.Size(997, 55);
             this.panelTitleBar.TabIndex = 19;
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panelMenu.BackColor = System.Drawing.Color.SeaGreen;
             this.panelMenu.Controls.Add(this.btnQuanLyKinhDoanh);
             this.panelMenu.Controls.Add(this.btnQuanLySan);
             this.panelMenu.Controls.Add(this.btnDatSan);
@@ -111,8 +111,18 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(366, 743);
+            this.panelMenu.Size = new System.Drawing.Size(411, 743);
             this.panelMenu.TabIndex = 18;
+            // 
+            // panelDesktopPane
+            // 
+            this.panelDesktopPane.BackgroundImage = global::QUANLYSANBONGMINI.Properties.Resources._01;
+            this.panelDesktopPane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPane.Location = new System.Drawing.Point(411, 55);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(997, 688);
+            this.panelDesktopPane.TabIndex = 20;
             // 
             // btnQuanLyKinhDoanh
             // 
@@ -129,6 +139,7 @@
             this.btnQuanLyKinhDoanh.Size = new System.Drawing.Size(409, 63);
             this.btnQuanLyKinhDoanh.TabIndex = 26;
             this.btnQuanLyKinhDoanh.Text = "Quản Lý Khách Hàng/Hóa Đơn";
+            this.btnQuanLyKinhDoanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQuanLyKinhDoanh.UseVisualStyleBackColor = true;
             this.btnQuanLyKinhDoanh.Click += new System.EventHandler(this.btnQuanLyKinhDoanh_Click);
             // 
@@ -147,6 +158,7 @@
             this.btnQuanLySan.Size = new System.Drawing.Size(409, 74);
             this.btnQuanLySan.TabIndex = 25;
             this.btnQuanLySan.Text = "Quản Lý Sân Bóng";
+            this.btnQuanLySan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQuanLySan.UseVisualStyleBackColor = true;
             this.btnQuanLySan.Click += new System.EventHandler(this.btnQuanLySan_Click);
             // 
@@ -165,6 +177,7 @@
             this.btnDatSan.Size = new System.Drawing.Size(409, 65);
             this.btnDatSan.TabIndex = 24;
             this.btnDatSan.Text = "Đặt Sân/Trả Sân";
+            this.btnDatSan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDatSan.UseVisualStyleBackColor = true;
             this.btnDatSan.Click += new System.EventHandler(this.btnDatSan_Click);
             // 
@@ -183,17 +196,18 @@
             this.btnHeThong.Size = new System.Drawing.Size(409, 70);
             this.btnHeThong.TabIndex = 23;
             this.btnHeThong.Text = "Quản Lý Tài Khoản";
+            this.btnHeThong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHeThong.UseVisualStyleBackColor = true;
             this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
             // 
             // btnlogo
             // 
             this.btnlogo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnlogo.Image = global::QUANLYSANBONGMINI.Properties.Resources.anh_bong_da_tren_san_co_105531274;
-            this.btnlogo.Location = new System.Drawing.Point(4, 7);
+            this.btnlogo.Image = global::QUANLYSANBONGMINI.Properties.Resources.images1;
+            this.btnlogo.Location = new System.Drawing.Point(-5, 0);
             this.btnlogo.Margin = new System.Windows.Forms.Padding(4);
             this.btnlogo.Name = "btnlogo";
-            this.btnlogo.Size = new System.Drawing.Size(358, 94);
+            this.btnlogo.Size = new System.Drawing.Size(431, 104);
             this.btnlogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnlogo.TabIndex = 0;
             this.btnlogo.TabStop = false;
@@ -208,16 +222,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
-            // 
-            // panelDesktopPane
-            // 
-            this.panelDesktopPane.BackgroundImage = global::QUANLYSANBONGMINI.Properties.Resources.euro_2020_ball_uniforia;
-            this.panelDesktopPane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(366, 55);
-            this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(1042, 688);
-            this.panelDesktopPane.TabIndex = 20;
             // 
             // frm_TrangChu
             // 

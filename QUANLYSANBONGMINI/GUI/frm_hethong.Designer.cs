@@ -42,10 +42,8 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_timkiem = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cbo_quyen = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_pass = new System.Windows.Forms.TextBox();
@@ -55,13 +53,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.toolStripChucNang = new System.Windows.Forms.ToolStrip();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btn_timkiem = new System.Windows.Forms.Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn_them = new System.Windows.Forms.ToolStripButton();
             this.btn_xoa = new System.Windows.Forms.ToolStripButton();
             this.btn_sua = new System.Windows.Forms.ToolStripButton();
             this.btn_reset = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_thoat = new System.Windows.Forms.ToolStripButton();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -69,9 +69,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TK)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.toolStripChucNang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -104,9 +104,9 @@
             this.panel4.Controls.Add(this.groupBox4);
             this.panel4.Controls.Add(this.groupBox3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(4, 31);
+            this.panel4.Location = new System.Drawing.Point(4, 35);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1283, 683);
+            this.panel4.Size = new System.Drawing.Size(1283, 679);
             this.panel4.TabIndex = 14;
             // 
             // panel5
@@ -115,7 +115,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 82);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(914, 601);
+            this.panel5.Size = new System.Drawing.Size(914, 597);
             this.panel5.TabIndex = 11;
             // 
             // dgv_TK
@@ -151,7 +151,7 @@
             this.dgv_TK.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_TK.RowHeadersWidth = 51;
             this.dgv_TK.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_TK.Size = new System.Drawing.Size(914, 601);
+            this.dgv_TK.Size = new System.Drawing.Size(914, 597);
             this.dgv_TK.TabIndex = 1;
             this.dgv_TK.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_TK_CellClick);
             // 
@@ -229,23 +229,6 @@
             this.txt_search.Size = new System.Drawing.Size(279, 36);
             this.txt_search.TabIndex = 2;
             // 
-            // btn_timkiem
-            // 
-            this.btn_timkiem.BackColor = System.Drawing.Color.White;
-            this.btn_timkiem.ForeColor = System.Drawing.Color.Black;
-            this.btn_timkiem.Image = global::QUANLYSANBONGMINI.Properties.Resources.search_invoice;
-            this.btn_timkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_timkiem.Location = new System.Drawing.Point(532, 19);
-            this.btn_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
-            this.btn_timkiem.Size = new System.Drawing.Size(153, 49);
-            this.btn_timkiem.TabIndex = 1;
-            this.btn_timkiem.Text = "Tìm Kiếm";
-            this.btn_timkiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_timkiem.UseVisualStyleBackColor = false;
-            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
-            // 
             // label9
             // 
             this.label9.Location = new System.Drawing.Point(63, 30);
@@ -275,21 +258,10 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(369, 683);
+            this.groupBox3.Size = new System.Drawing.Size(369, 679);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::QUANLYSANBONGMINI.Properties.Resources.login_512;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(47, 30);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 12;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // cbo_quyen
             // 
@@ -380,16 +352,53 @@
             this.btn_thoat});
             this.toolStripChucNang.Location = new System.Drawing.Point(4, 4);
             this.toolStripChucNang.Name = "toolStripChucNang";
-            this.toolStripChucNang.Size = new System.Drawing.Size(1283, 27);
+            this.toolStripChucNang.Size = new System.Drawing.Size(1283, 31);
             this.toolStripChucNang.TabIndex = 13;
             this.toolStripChucNang.Text = "toolStrip1";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // btn_timkiem
+            // 
+            this.btn_timkiem.BackColor = System.Drawing.Color.White;
+            this.btn_timkiem.ForeColor = System.Drawing.Color.Black;
+            this.btn_timkiem.Image = global::QUANLYSANBONGMINI.Properties.Resources.search2;
+            this.btn_timkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_timkiem.Location = new System.Drawing.Point(532, 19);
+            this.btn_timkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_timkiem.Name = "btn_timkiem";
+            this.btn_timkiem.Padding = new System.Windows.Forms.Padding(11, 0, 11, 0);
+            this.btn_timkiem.Size = new System.Drawing.Size(93, 49);
+            this.btn_timkiem.TabIndex = 1;
+            this.btn_timkiem.Text = "Tìm Kiếm";
+            this.btn_timkiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_timkiem.UseVisualStyleBackColor = false;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::QUANLYSANBONGMINI.Properties.Resources.teamwork1;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(47, 30);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 12;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // btn_them
             // 
             this.btn_them.Image = global::QUANLYSANBONGMINI.Properties.Resources.Add;
             this.btn_them.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(70, 24);
+            this.btn_them.Size = new System.Drawing.Size(70, 28);
             this.btn_them.Text = "Thêm";
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
@@ -398,7 +407,7 @@
             this.btn_xoa.Image = global::QUANLYSANBONGMINI.Properties.Resources.Delete;
             this.btn_xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(59, 24);
+            this.btn_xoa.Size = new System.Drawing.Size(59, 28);
             this.btn_xoa.Text = "Xoá";
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
@@ -407,7 +416,7 @@
             this.btn_sua.Image = global::QUANLYSANBONGMINI.Properties.Resources.Modify;
             this.btn_sua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(58, 24);
+            this.btn_sua.Size = new System.Drawing.Size(58, 28);
             this.btn_sua.Text = "Sửa";
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
@@ -416,27 +425,18 @@
             this.btn_reset.Image = global::QUANLYSANBONGMINI.Properties.Resources.reset_undo_arrow_icon_149006;
             this.btn_reset.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(69, 24);
+            this.btn_reset.Size = new System.Drawing.Size(69, 28);
             this.btn_reset.Text = "Reset";
             this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btn_thoat
             // 
             this.btn_thoat.Image = global::QUANLYSANBONGMINI.Properties.Resources.exit_32px;
             this.btn_thoat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(71, 24);
+            this.btn_thoat.Size = new System.Drawing.Size(71, 28);
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // frm_HeThong
             // 
@@ -455,10 +455,10 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.toolStripChucNang.ResumeLayout(false);
             this.toolStripChucNang.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -190,7 +190,7 @@ namespace QUANLYSANBONGMINI.GUI
                 {
                     try
                     {
-                        san_bll.SuaDuLieuSan(txt_masan.Text, txt_masan.Text, txt_masan.Text);
+                        san_bll.SuaDuLieuSan(txt_masan.Text, cbo_loaisan.Text, txt_tensan.Text);
                         MessageBox.Show("Thành công!");
                         LoadSan();
                     }
@@ -353,6 +353,11 @@ namespace QUANLYSANBONGMINI.GUI
                 if (k == 1)
                     e.Handled = true;
             }
+        }
+
+        private void btn_TimKiem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

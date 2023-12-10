@@ -274,7 +274,7 @@ namespace QUANLYSANBONGMINI.GUI
             {
                 thanhtien += float.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
             }
-            label30.Text = "Tổng doanh thu: " + thanhtien.ToString() + " VNĐ";
+            label30.Text = "Tổng doanh thu: " + String.Format("{0:#,##0}",thanhtien).ToString() + " VNĐ";
         }
         private void btnThang_Click(object sender, EventArgs e)
         {
