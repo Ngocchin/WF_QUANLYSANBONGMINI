@@ -16,5 +16,13 @@ namespace QUANLYSANBONGMINI.GUI
         {
             InitializeComponent();
         }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            CrystalReport1 rpt = new CrystalReport1();
+            crystalReportViewer1.ReportSource = rpt;
+            rpt.SetDatabaseLogon("chin-pc", "QuanLySanBong");
+            crystalReportViewer1.Refresh();
+        }
     }
 }

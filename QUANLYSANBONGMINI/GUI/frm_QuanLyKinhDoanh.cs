@@ -511,5 +511,11 @@ namespace QUANLYSANBONGMINI.GUI
             frm_InHoaDon inhd = new frm_InHoaDon();
             inhd.ShowDialog();
         }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            frm_InHDKH inhdkh = new frm_InHDKH();
+            inhdkh.ShowDialog();
+        }
     }
 }
