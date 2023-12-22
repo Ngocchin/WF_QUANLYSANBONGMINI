@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using QUANLYSANBONGMINI.BLL;
 
 namespace QUANLYSANBONGMINI.GUI
@@ -268,28 +269,38 @@ namespace QUANLYSANBONGMINI.GUI
         }
         public void tong()
         {
-            int tien = dataGridView1.Rows.Count;
-            float thanhtien = 0;
-            for (int i = 0; i < tien; i++)
+            // Assuming your data source is a DataTable
+            DataTable chartData = (DataTable)chart1.DataSource;
+
+            if (chartData != null && chartData.Rows.Count > 0)
             {
-                thanhtien += float.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
+                float thanhtien = 0;
+                foreach (DataRow row in chartData.Rows)
+                {
+                    // Assuming the column index 5 corresponds to the "TongTien_HD" column
+                    thanhtien += float.Parse(row["TongTien_HD"].ToString());
+                }
+
+                label30.Text = "Tổng doanh thu: " + String.Format("{0:#,##0}", thanhtien).ToString() + " VNĐ";
             }
-            label30.Text = "Tổng doanh thu: " + String.Format("{0:#,##0}",thanhtien).ToString() + " VNĐ";
+            else
+            {
+                // Handle the case where the chart data is null or empty
+                label30.Text = "Tổng doanh thu: 0 VNĐ";
+            }
         }
         private void btnThang_Click(object sender, EventArgs e)
         {
             try
             {
-                dataGridView1.AutoGenerateColumns = false;
+                chart1.Titles.Clear();
                 DataTable dtHD = new DataTable();
                 dtHD = hd_bll.HienThiDuLieuTheoThang(cboThang.Text, cboNam.Text);
-                dataGridView1.DataSource = dtHD;
-                dataGridView1.Columns[0].DataPropertyName = "Ma_KhachHang";
-                dataGridView1.Columns[1].DataPropertyName = "Ma_San";
-                dataGridView1.Columns[2].DataPropertyName = "NgayLap_HD";
-                dataGridView1.Columns[3].DataPropertyName = "TongPhut_Da";
-                dataGridView1.Columns[4].DataPropertyName = "DonGia";
-                dataGridView1.Columns[5].DataPropertyName = "TongTien_HD";
+                chart1.DataSource = dtHD;
+                chart1.Series["Tongtien"].XValueMember = "NgayLap_HD";
+                chart1.Series["Tongtien"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+                chart1.Series["Tongtien"].YValueMembers = "TongTien_HD";
+                chart1.Titles.Add("Thống kê theo tháng");               
             }
             catch
             {
@@ -301,16 +312,14 @@ namespace QUANLYSANBONGMINI.GUI
         {
             try
             {
-                dataGridView1.AutoGenerateColumns = false;
+                chart1.Titles.Clear();
                 DataTable dtHD = new DataTable();
                 dtHD = hd_bll.HienThiDuLieuTheoNam(comboBox1.Text);
-                dataGridView1.DataSource = dtHD;
-                dataGridView1.Columns[0].DataPropertyName = "Ma_KhachHang";
-                dataGridView1.Columns[1].DataPropertyName = "Ma_San";
-                dataGridView1.Columns[2].DataPropertyName = "NgayLap_HD";
-                dataGridView1.Columns[3].DataPropertyName = "TongPhut_Da";
-                dataGridView1.Columns[4].DataPropertyName = "DonGia";
-                dataGridView1.Columns[5].DataPropertyName = "TongTien_HD";
+                chart1.DataSource = dtHD;               
+                chart1.Series["Tongtien"].XValueMember = "NgayLap_HD";
+                chart1.Series["Tongtien"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+                chart1.Series["Tongtien"].YValueMembers = "TongTien_HD";                
+                chart1.Titles.Add("Thống kê theo năm");               
             }
             catch
             {
@@ -495,6 +504,12 @@ namespace QUANLYSANBONGMINI.GUI
                 if (k == 1)
                     e.Handled = true;
             }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            frm_InHoaDon inhd = new frm_InHoaDon();
+            inhd.ShowDialog();
         }
     }
 }
