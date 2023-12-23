@@ -64,7 +64,7 @@
             this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShow.Location = new System.Drawing.Point(0, 0);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(261, 83);
+            this.btnShow.Size = new System.Drawing.Size(208, 83);
             this.btnShow.TabIndex = 0;
             this.btnShow.Text = "Show Report";
             this.btnShow.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
             this.Name = "frm_InHoaDon";
-            this.Text = "frm_InHoaDon";
+            this.Text = "HÓA ĐƠN";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

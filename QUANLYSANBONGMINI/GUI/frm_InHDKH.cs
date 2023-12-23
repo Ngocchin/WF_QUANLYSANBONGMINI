@@ -35,23 +35,30 @@ namespace QUANLYSANBONGMINI.GUI
             comboBox1.DataSource = dt;
             comboBox1.ValueMember = "Ma_KhachHang";
             comboBox1.DisplayMember = "Ma_KhachHang";
-        }
+        }   
 
         private void btn_inkh_Click(object sender, EventArgs e)
         {
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "spDSKH";
             cmd.Parameters.Clear();
-            cmd.Parameters.AddWithValue("@Ma_KhachHang", comboBox1.SelectedValue.ToString());
+            if (comboBox1.SelectedIndex != -1)
+            {
+                cmd.Parameters.AddWithValue("@Ma_KhachHang", comboBox1.SelectedValue.ToString());
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@Ma_KhachHang", DBNull.Value);
+            }
+
             DataTable dt = new DataTable();
             da.SelectCommand = cmd;
             da.Fill(dt);
+
             CrystalReport2 rpt = new CrystalReport2();
             rpt.SetDataSource(dt);
-
-            //frm_InHDKH f = new frm_InHDKH();
-            //f.crystalReportViewer1.ReportSource = rpt;
-            //f.ShowDialog();
+            crystalReportViewer1.ReportSource = rpt;
+            crystalReportViewer1.Refresh();
         }
 
         private void frm_InHDKH_Load(object sender, EventArgs e)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace QUANLYSANBONGMINI.GUI
 {
     public partial class frm_InHoaDon : Form
     {
+
         public frm_InHoaDon()
         {
             InitializeComponent();
@@ -19,10 +21,29 @@ namespace QUANLYSANBONGMINI.GUI
 
         private void btnShow_Click(object sender, EventArgs e)
         {
-            CrystalReport1 rpt = new CrystalReport1();
-            crystalReportViewer1.ReportSource = rpt;
-            rpt.SetDatabaseLogon("chin-pc", "QuanLySanBong");
-            crystalReportViewer1.Refresh();
+            try
+            {
+                DataSet ds = new DataSet();
+                using (SqlConnection connection = new SqlConnection("Data Source=chin-pc;Initial Catalog=QuanLySanBong;Integrated Security=True"))
+                {
+                    connection.Open();
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM HoaDon", connection))
+                    {
+                        adapter.Fill(ds, "HoaDon");
+                    }
+                }
+
+                CrystalReport1 rpt = new CrystalReport1();
+                rpt.SetDataSource(ds.Tables["HoaDon"]);
+
+                crystalReportViewer1.ReportSource = rpt;
+                crystalReportViewer1.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

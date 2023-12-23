@@ -277,7 +277,6 @@ namespace QUANLYSANBONGMINI.GUI
                 float thanhtien = 0;
                 foreach (DataRow row in chartData.Rows)
                 {
-                    // Assuming the column index 5 corresponds to the "TongTien_HD" column
                     thanhtien += float.Parse(row["TongTien_HD"].ToString());
                 }
 
@@ -285,7 +284,6 @@ namespace QUANLYSANBONGMINI.GUI
             }
             else
             {
-                // Handle the case where the chart data is null or empty
                 label30.Text = "Tổng doanh thu: 0 VNĐ";
             }
         }
@@ -516,6 +514,24 @@ namespace QUANLYSANBONGMINI.GUI
         {
             frm_InHDKH inhdkh = new frm_InHDKH();
             inhdkh.ShowDialog();
+        }
+
+        private void dtgvTTKH_Show_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            try
+            {
+                numrow = e.RowIndex;
+                txtMaKhachHang.Text = dtgvTTKH_Show.Rows[numrow].Cells[0].Value.ToString();
+                txtTenKhachHang.Text = dtgvTTKH_Show.Rows[numrow].Cells[1].Value.ToString();
+                txtDiaChi.Text = dtgvTTKH_Show.Rows[numrow].Cells[2].Value.ToString();
+                txtSoDienThoai.Text = dtgvTTKH_Show.Rows[numrow].Cells[3].Value.ToString();
+
+            }
+            catch
+            {
+                MessageBox.Show("Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

@@ -42,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(468, 16);
+            this.label1.Location = new System.Drawing.Point(553, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(337, 29);
             this.label1.TabIndex = 2;
@@ -52,7 +52,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(588, 83);
+            this.comboBox1.Location = new System.Drawing.Point(664, 66);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 0;
@@ -60,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(470, 89);
+            this.label2.Location = new System.Drawing.Point(546, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 16);
             this.label2.TabIndex = 3;
@@ -68,7 +68,7 @@
             // 
             // btn_inkh
             // 
-            this.btn_inkh.Location = new System.Drawing.Point(762, 86);
+            this.btn_inkh.Location = new System.Drawing.Point(815, 66);
             this.btn_inkh.Name = "btn_inkh";
             this.btn_inkh.Size = new System.Drawing.Size(75, 23);
             this.btn_inkh.TabIndex = 1;
@@ -107,7 +107,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.panel1);
             this.Name = "frm_InHDKH";
-            this.Text = "frm_InHDKH";
+            this.Text = "THANH TOÁN";
             this.Load += new System.EventHandler(this.frm_InHDKH_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
